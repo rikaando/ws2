@@ -215,7 +215,7 @@ export GITHUB_REPO=$(gcloud builds repositories list --region=asia-northeast1 --
 GitHub リポジトリの各種状態遷移によって起動する Cloud Build トリガーを作成します。
 
 1. demo-backend-api-pull-request
-**環境によって不適切な Tab が挿入されることがあるため、ここは GitHub 側で Tutorialを参照してそちらから Copy して下さい**
+**環境によって不適切な Tab が挿入されることがあるため、ここは [GitHub 側で Tutorialを参照して](https://github.com/tpoppok/cloud-run-handson-02/blob/main/tutorial.md)そちらから Copy して下さい**
 ```
 cat <<EOF > ./pr-trigger.yaml
 description: Build and deploy to Cloud Run service demo-backend-api on pull request
