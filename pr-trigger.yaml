@@ -1,0 +1,11 @@
+description: Build and deploy to Cloud Run service demo-backend-api on pull request
+filename: cloudbuild_pr.yaml
+includeBuildLogs: INCLUDE_BUILD_LOGS_WITH_STATUS
+name: demo-backend-api-pull-request
+repositoryEventConfig:
+  pullRequest:
+    branch: .*
+    commentControl: COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY
+  repository: projects/hatena2024/locations/asia-northeast1/connections/ws2git/repositories/rikaando-ws2
+  repositoryType: GITHUB
+serviceAccount: projects/hatena2024/serviceAccounts/cloud-build-runner@hatena2024.iam.gserviceaccount.com

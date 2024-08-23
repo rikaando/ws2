@@ -1,0 +1,10 @@
+description: Remove Cloud Run Tags
+gitFileSource:
+  path: cloudbuild_rm_run_tag.yaml
+  repository: projects/hatena2024/locations/asia-northeast1/connections/ws2git/repositories/rikaando-ws2
+  revision: refs/heads/main
+name: demo-backend-api-remove-cloud-run-tag
+serviceAccount: projects/hatena2024/serviceAccounts/cloud-build-runner@hatena2024.iam.gserviceaccount.com
+sourceToBuild:
+  ref: refs/heads/main
+  repository: projects/hatena2024/locations/asia-northeast1/connections/ws2git/repositories/rikaando-ws2

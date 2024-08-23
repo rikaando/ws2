@@ -1,0 +1,10 @@
+description: Build and deploy to Cloud Run service demo-backend-api on push to main
+filename: cloudbuild.yaml
+includeBuildLogs: INCLUDE_BUILD_LOGS_WITH_STATUS
+name: demo-backend-api-push-main
+repositoryEventConfig:
+  push:
+    branch: ^main$
+  repository: projects/hatena2024/locations/asia-northeast1/connections/ws2git/repositories/rikaando-ws2
+  repositoryType: GITHUB
+serviceAccount: projects/hatena2024/serviceAccounts/cloud-build-runner@hatena2024.iam.gserviceaccount.com
