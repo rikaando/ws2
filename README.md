@@ -24,7 +24,7 @@ Branch が削除されたら実行（GitHub Actions から Cloud Build を呼び
 [チュートリアル](tutorial.md)を参照
 
 ## testDeploy
-test
+test2
 
 [![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.png)](https://ssh.cloud.google.com/cloudshell/open?cloudshell_git_repo=https://github.com/tpoppok/cloud-run-handson-02&cloudshell_working_dir=./&cloudshell_tutorial=tutorial.md&shellonly=true)
 
