@@ -253,7 +253,7 @@ EOF
 gcloud builds triggers import --source=./main-trigger.yaml --region asia-northeast1
 ```
 3. demo-backend-api-remove-cloud-run-tag	
-```bash
+```
 cat <<EOF > ./rm-tag-trigger.yaml
 description: Remove Cloud Run Tags
 gitFileSource:
